@@ -87,7 +87,6 @@ jobs:
 
     - name: Build
       run: |
-        cd DotNet.WebApp
         dotnet build --configuration Release --no-restore
         dotnet publish -p:PublishProfile=FolderProfile -o ../
         
