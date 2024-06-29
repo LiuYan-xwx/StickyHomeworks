@@ -88,7 +88,7 @@ jobs:
     - name: Build
       run: |
         dotnet build --configuration Release --no-restore
-        dotnet publish -p:PublishProfile=FolderProfile -o ../
+        dotnet publish
         
     - name: List files
       run: ls
@@ -99,4 +99,4 @@ jobs:
       with:
         name: output
         path: |
-         ./*
+         ./StickyHomeworks/bin/publish/*
